@@ -3,13 +3,13 @@ spring:
     active: 
       - dev
 ---
-server: 
+server:
   port: 7001
 
-spring: 
-  profiles: dev
-    application: 
-      name: microservicecloud-config-eureka-client
+spring:
+  profiles: test
+  application:
+    name: microservicecloud-config-eureka-client
 
 eureka:
   instance:
@@ -20,13 +20,13 @@ eureka:
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/
 ---
-server: 
+server:
   port: 7001
 
-spring: 
+spring:
   profiles: test
-    application: 
-      name: microservicecloud-config-eureka-client
+  application:
+    name: microservicecloud-config-eureka-client
 
 eureka:
   instance:
