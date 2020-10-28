@@ -1,14 +1,16 @@
-spring
+spring:
   profiles:
-    active:
-    - dev
+    active: 
+      - dev
 ---
-spring
+spring:
   profiles: dev
   application:
-    name: microservicecloud-config-cebbank-dev
+    name: microservicecloud-config-cebbank.dev
 ---
-spring
+spring:
   profiles: test
-  application: 
+  application:
     name: microservicecloud-config-cebbank-test
+
+#保存为utf-8格式
